@@ -3,7 +3,9 @@
   "scripts": {
     "clean": "rimraf output && rimraf .pulp-cache",
     "build": "eslint src && pulp build -- --censor-lib --strict",
-    "test": "pulp test"
+    "test": "pulp test",
+    "test:rust": "./bin/test",
+    "test:rust:clean": "./bin/test -c"
   },
   "devDependencies": {
     "eslint": "^7.15.0",
